@@ -3,6 +3,7 @@ import Nav from './components/Nav';
 import ContactForm from './components/Contact'
 import About from './components/About';
 import Resume from './components/Resume';
+import Showcase from './components/Showcase';
 
 function App() {
   const [navLinks] = useState(['About Me', 'Showcase', 'Resume', 'Contact'])
@@ -10,11 +11,11 @@ function App() {
   const [currentNavLink, setcurrentNavLink] = useState(navLinks[0]);
 
   function renderContent(navLink) {
-    switch (currentNavLink) {
+    switch (navLink) {
       case 'About Me':
         return <About />
       case 'Showcase':
-        return 'Showcase'
+        return <Showcase />
       case 'Resume':
         return <Resume />
       case 'Contact':
@@ -25,7 +26,7 @@ function App() {
   }
 
   return (
-    <div>
+    <>
       <Nav
         navLinks={navLinks}
         currentNavLink={currentNavLink}
@@ -34,7 +35,7 @@ function App() {
       <main>
         {renderContent(currentNavLink)}
       </main>
-    </div>
+    </>
   );
 }
 
