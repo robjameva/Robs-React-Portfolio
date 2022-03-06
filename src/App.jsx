@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Nav from './components/Nav';
 import ContactForm from './components/Contact'
 import About from './components/About';
+import Resume from './components/Resume';
 
 function App() {
   const [navLinks] = useState(['About Me', 'Showcase', 'Resume', 'Contact'])
@@ -15,7 +16,7 @@ function App() {
       case 'Showcase':
         return 'Showcase'
       case 'Resume':
-        return 'Resume'
+        return <Resume />
       case 'Contact':
         return <ContactForm />
 
