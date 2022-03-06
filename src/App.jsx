@@ -4,6 +4,7 @@ import ContactForm from './components/Contact'
 import About from './components/About';
 import Resume from './components/Resume';
 import Showcase from './components/Showcase';
+import Footer from './components/Footer';
 
 function App() {
   const [navLinks] = useState(['About Me', 'Showcase', 'Resume', 'Contact'])
@@ -35,6 +36,7 @@ function App() {
       <main>
         {renderContent(currentNavLink)}
       </main>
+      <Footer />
     </>
   );
 }
