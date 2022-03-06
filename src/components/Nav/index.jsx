@@ -20,11 +20,11 @@ function Nav(props) {
 
     return (
         <header>
-            <h2>
+            {/* <h2>
                 <a href="/" data-testid='link'>
-                    <span role="img" aria-label="camera"> 📸</span> Robert Evanik
+                    <span role="img" aria-label="camera"> 👨🏻‍💻</span> Robert Evanik
                 </a>
-            </h2>
+            </h2> */}
             <nav>
                 <ul className="flex-row">
                     {navLinks.map(link => (

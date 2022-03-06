@@ -1,6 +1,6 @@
-import './App.css';
 import React, { useState } from 'react';
 import Nav from './components/Nav';
+import ContactForm from './components/Contact'
 
 function App() {
   const [navLinks] = useState(['About Me', 'My Favorite Projects', 'Resume'])
@@ -12,13 +12,19 @@ function App() {
     <div>
       <Nav
         navLinks={navLinks}
-        currentCategory={currentNavLink}
-        setCurrentCategory={setcurrentNavLink}
+        currentNavLink={currentNavLink}
+        setcurrentNavLink={setcurrentNavLink}
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
       />
       <main>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque consequatur earum odio rerum blanditiis temporibus aliquid! Perferendis quam, maiores, vitae exercitationem odio quisquam molestias nulla rerum suscipit laudantium voluptatem tempora!</p>
+        {!contactSelected ? (
+
+          // <About />
+          <p>hello world</p>
+        ) : (
+          <ContactForm />
+        )}
       </main>
     </div>
   );
