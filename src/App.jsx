@@ -1,12 +1,27 @@
 import React, { useState } from 'react';
 import Nav from './components/Nav';
 import ContactForm from './components/Contact'
+import About from './components/About';
 
 function App() {
-  const [navLinks] = useState(['About Me', 'My Favorite Projects', 'Resume'])
+  const [navLinks] = useState(['About Me', 'Showcase', 'Resume', 'Contact'])
 
   const [currentNavLink, setcurrentNavLink] = useState(navLinks[0]);
-  const [contactSelected, setContactSelected] = useState(false);
+
+  function renderContent(navLink) {
+    switch (currentNavLink) {
+      case 'About Me':
+        return <About />
+      case 'Showcase':
+        return 'Showcase'
+      case 'Resume':
+        return 'Resume'
+      case 'Contact':
+        return <ContactForm />
+
+
+    }
+  }
 
   return (
     <div>
@@ -14,17 +29,9 @@ function App() {
         navLinks={navLinks}
         currentNavLink={currentNavLink}
         setcurrentNavLink={setcurrentNavLink}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
       />
       <main>
-        {!contactSelected ? (
-
-          // <About />
-          <p>hello world</p>
-        ) : (
-          <ContactForm />
-        )}
+        {renderContent(currentNavLink)}
       </main>
     </div>
   );

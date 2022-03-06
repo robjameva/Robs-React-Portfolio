@@ -5,8 +5,6 @@ function Nav(props) {
         navLinks = [],
         setcurrentNavLink,
         currentNavLink,
-        contactSelected,
-        setContactSelected
     } = props;
 
     useEffect(() => {
@@ -20,33 +18,18 @@ function Nav(props) {
 
     return (
         <header>
-            {/* <h2>
-                <a href="/" data-testid='link'>
-                    <span role="img" aria-label="camera"> 👨🏻‍💻</span> Robert Evanik
-                </a>
-            </h2> */}
             <nav>
                 <ul className="flex-row">
                     {navLinks.map(link => (
                         <li
-                            className={`mx-1 ${currentNavLink === link && !contactSelected && 'navActive'}`}
+                            className={`mx-1 ${currentNavLink === link && 'navActive'}`}
                             key={link}
                         >
-                            <span
-                                onClick={() => {
-                                    setcurrentNavLink(link)
-                                    setContactSelected(false)
-                                }}
-                            >
+                            <span onClick={() => setcurrentNavLink(link)}>
                                 {link}
                             </span>
                         </li>
                     ))}
-                    <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-                        <span onClick={() => setContactSelected(true)}>
-                            Contact
-                        </span>
-                    </li>
                 </ul>
             </nav>
         </header>
