@@ -26,7 +26,7 @@ function Nav(props) {
                             className={`mx-1 ${currentNavLink === link && 'navActive'}`}
                             key={link}
                         >
-                            <span onClick={() => setcurrentNavLink(link)}>
+                            <span onClick={() => setcurrentNavLink(link)} >
                                 {link}
                             </span>
                         </li>
