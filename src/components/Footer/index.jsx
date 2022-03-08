@@ -6,6 +6,7 @@ import salesfoce from '../../assets/images/salesforce-brands.svg'
 function Footer() {
     return (
         <footer>
+            <span>👇🏼 Connect with me </span>
             <hr />
             <a href="https://www.linkedin.com/in/robertevanik/" target='_blank'>
                 <img src={linkedIn} alt="" width='50px' height='50px' />

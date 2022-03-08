@@ -55,7 +55,7 @@ export default function Showcase() {
             title: 'Awards & Certifications',
             img: require('../../assets/images/certs.png'),
             alt: '',
-            description: 'Showcase for my certificates and certifications.',
+            description: 'Showcase for my awards, certificates and certifications.',
             website: 'https://github.com/robjameva/Awards-Certifications-and-Certificates',
             repo: 'https://github.com/robjameva/Awards-Certifications-and-Certificates'
         },

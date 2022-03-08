@@ -18,7 +18,7 @@ function Nav(props) {
 
     return (
         <header>
-            <h1>🚀 Robert Evanik</h1>
+            <h1 onClick={() => setcurrentNavLink('About Me')}>Robert Evanik</h1>
             <nav>
                 <ul className="flex-row">
                     {navLinks.map(link => (

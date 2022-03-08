@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 
 main {
 	margin: 0 auto;
@@ -10,7 +13,7 @@ main {
   --tertiary: #B12704;
   --light: #fafafa;
   --dark: #1d1d1d;
-  --darker: #111111;
+  --darker: #303030;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -18,13 +21,26 @@ main {
 
 }
 
-* {
-  box-sizing: border-box;
-}
-
 html,
 body {
   min-height: 100%;
+}
+header {
+  background: var(--dark);
+  border-bottom: 2px solid var(--primary);
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+hr {
+  height: 1px;
+  background-color: var(--primary);
+  border: none;
 }
 
 body {
@@ -48,11 +64,11 @@ h6 {
   font-family: 'Sofia Pro', sans-serif;
   font-weight: 600;
   margin: 5px 0;
-  line-height: 1.25;
 }
 
 h1 {
   font-size: 2.25rem;
+  cursor: pointer;
 }
 
 h2 {
@@ -90,33 +106,26 @@ a:hover {
   text-decoration: underline;
 }
 
-header {
-  background: var(--dark);
-}
-
-header a {
-  color: var(--light);
-}
-
 button {
-  font-size: 1rem;
-  text-decoration: none;
-  padding: 0.25rem 1rem;
-  border-radius: .5rem;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  margin: 0 1px;
-  background-color: var(--secondary);
+	background: var(--dark);
+	border: 0;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 30px;
+	padding: 10px 15px;	
 }
 
-button:hover {
-  opacity: .8;
-}
-
-button[disabled] {
-  cursor: default;
-  opacity: .8;
+a {
+	border-radius: 5px;
+	color: var(--primary);
+	font-weight: 600;
+	padding: 2px 4px;
+	margin-left: -2px;
+	margin-right: -2px;
+	
 }
 
 img {
@@ -128,21 +137,17 @@ span[role="img"] {
 }
 
 form {
-  width: 40%;
+  width: 85%;
 }
 
-input {
-  font-size: 1rem;
-  padding: 0.25rem;
-  border: 1px solid var(--dark);
-  outline: none;
-  border-radius: 3px;
-  transition: box-shadow 0.2s;
+footer {
+  width: 100%;
+  height: 2.5rem; 
+  text-align: center;
 }
 
-input:focus {
-  border: 1px solid var(--secondary);
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+input, textarea {
+  color: white !important;
 }
 
 li {
@@ -157,11 +162,9 @@ nav  li {
   cursor: pointer;
 }
 
-textarea {
-	width: 600px;
-	height: 120px;
-	border: 3px solid #cccccc;
-	padding: 5px;
+.rob {
+  border-radius: 50%;
+  max-height: 350px;
 }
 
 .showcase-card {
@@ -170,12 +173,29 @@ textarea {
 }
 
 .card-container {
-  background-color: #303030 !important;
+  background-color: var(--darker) !important;
+}
+
+.card-container button {
+  color: white;
+  font-family: 'Sofia Pro', sans-serif;
+  text-decoration: underline;
 }
 
 .resume {
   width: 100%;
   height: auto;
+}
+
+.text-bg {
+  background-color: var(--darker);
+  border-radius: 10px;
+  padding: 25px;
+  font-size: x-large;
+}
+
+.list-container {
+  padding-left: 0em;
 }
 
 .container {
@@ -246,61 +266,6 @@ textarea {
 .card {
   width: 25%;
   text-align: center;
-}
-
-.img-thumbnail {
-  width: auto;
-  height: 300px;
-  margin-bottom: 50px;
-  cursor: pointer;
-}
-
-.modalBackdrop {
-	background: rgba(0, 0, 0, .65);
-	bottom: 0;
-	left: 0;
-	overflow: auto;
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: 1;
-}
-
-.modalContainer {
-	background: var(--darker);
-	border-radius: 5px;
-	max-width: 100%;
-	margin: 50px auto;
-	padding: 15px;
-	width: 960px;
-}
-
-.modalTitle {
-	font-size: 18px;
-	font-weight: 600;
-	margin-bottom: 25px;
-}
-
-button {
-	background: var(--primary);
-	border: 0;
-	border-radius: 5px;
-	color: #fff;
-	cursor: pointer;
-	font-size: 16px;
-	font-weight: 600;
-	margin-bottom: 30px;
-	padding: 10px 15px;	
-}
-
-a {
-	border-radius: 5px;
-	color: var(--primary);
-	font-weight: 600;
-	padding: 2px 4px;
-	margin-left: -2px;
-	margin-right: -2px;
-	
 }
 
 .navActive {

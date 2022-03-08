@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
+import TextField from '@mui/material/TextField';
 
 function ContactForm() {
 
@@ -30,27 +31,56 @@ function ContactForm() {
     }
 
     return (
-        <section>
+        <section className='text-bg'>
             <h1 data-testid='h1tag'>Contact me</h1>
+            <ol className='list-container'>
+                <li><a href="mailto:rob.evanik@gmail.com"> 📧 rob.evanik@gmail.com</a></li>
+                <li>☎️ (973) 919-5256</li>
+                <li>📝 Or you can use this form below</li>
+            </ol>
             <form id='contact-form' onSubmit={handleSubmit}>
                 <div>
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" name="name" defaultValue={name} onMouseOut={handleChange} />
+                    <TextField
+                        label="Name"
+                        color="info"
+                        focused
+                        required
+                        name="name"
+                        onMouseOut={handleChange}
+                        margin="normal"
+                    />
                 </div>
                 <div>
-                    <label htmlFor="email">Email address:</label>
-                    <input type="email" name="email" defaultValue={email} onMouseOut={handleChange} />
+                    <TextField
+                        label="Email"
+                        color="info"
+                        focused
+                        required
+                        name="email"
+                        onMouseOut={handleChange}
+                        margin="normal" />
                 </div>
                 <div>
-                    <label htmlFor="message">Message:</label>
-                    <textarea name="message" rows="5" defaultValue={message} onMouseOut={handleChange} />
+                    <TextField
+                        label="Message"
+                        color="info"
+                        focused
+                        required
+                        multiline
+                        fullWidth
+                        rows={6}
+                        name="message"
+                        onMouseOut={handleChange}
+                        margin="normal"
+                    />
                 </div>
+
                 {errorMessage && (
                     <div>
                         <p className='error-text'>{errorMessage}</p>
                     </div>
                 )}
-                <button data-testid='btntag' type='submit'>Submit</button>
+                <button data-testid='btntag' type='submit'>🚀 Submit</button>
             </form>
         </section>
     );
