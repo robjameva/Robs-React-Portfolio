@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/robs-react-portfolio/static/css/main.7f8a9828.css",
+    "main.js": "/robs-react-portfolio/static/js/main.09980d1e.js",
+    "static/js/787.9d5ed30b.chunk.js": "/robs-react-portfolio/static/js/787.9d5ed30b.chunk.js",
+    "static/media/react-logo.gif": "/robs-react-portfolio/static/media/react-logo.ed910969f695ebb0c84f.gif",
+    "static/media/resume.jpg": "/robs-react-portfolio/static/media/resume.2439933318277c66594d.jpg",
+    "static/media/easy-res.png": "/robs-react-portfolio/static/media/easy-res.0de6875dcbeb5d46c003.png",
+    "static/media/rob_default.JPG": "/robs-react-portfolio/static/media/rob_default.df1e65021a26d121ef68.JPG",
+    "static/media/rob_default_crop.JPG": "/robs-react-portfolio/static/media/rob_default_crop.fbcc36d5bcb9162ce2af.JPG",
+    "static/media/Resume.pdf": "/robs-react-portfolio/static/media/Resume.e7f739f9d6291f72bb54.pdf",
+    "static/media/resume.png": "/robs-react-portfolio/static/media/resume.939af903142618a90da1.png",
+    "static/media/did-i-win.png": "/robs-react-portfolio/static/media/did-i-win.41ed93a85c8fc6092947.png",
+    "static/media/budget.png": "/robs-react-portfolio/static/media/budget.81fae8612122063594cd.png",
+    "static/media/certs.png": "/robs-react-portfolio/static/media/certs.87eb6ee8f68427535988.png",
+    "static/media/salesforce-brands.svg": "/robs-react-portfolio/static/media/salesforce-brands.ca08b690e4cc8903e5d8b7f6279af40a.svg",
+    "static/media/github-brands.svg": "/robs-react-portfolio/static/media/github-brands.8e57ec4ccfcde6fde88b6053dcdab935.svg",
+    "index.html": "/robs-react-portfolio/index.html",
+    "static/media/linkedin-in-brands.svg": "/robs-react-portfolio/static/media/linkedin-in-brands.08c3a78281c77b61f1651eab2fb54599.svg",
+    "main.7f8a9828.css.map": "/robs-react-portfolio/static/css/main.7f8a9828.css.map",
+    "main.09980d1e.js.map": "/robs-react-portfolio/static/js/main.09980d1e.js.map",
+    "787.9d5ed30b.chunk.js.map": "/robs-react-portfolio/static/js/787.9d5ed30b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7f8a9828.css",
+    "static/js/main.09980d1e.js"
+  ]
+}
