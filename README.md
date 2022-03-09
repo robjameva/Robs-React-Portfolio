@@ -3,6 +3,9 @@
 Hi my name is Rob, I am a web developer from New Jersey with a passion for technology. I specialize in full stack JavaScript development and have industry experience with Salesforce Apex. 
 
 Thank you for stopping by, you can view my full portfolio by clicking the link below 👇🏼
+
+<br>
+
 https://robjameva.github.io/robs-react-portfolio/
 
 ![home page screenshot](src/assets/images/screen-shot.png?raw=true)
