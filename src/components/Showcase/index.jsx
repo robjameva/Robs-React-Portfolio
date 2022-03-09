@@ -5,7 +5,6 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import jpg from '../../assets/images/rob_default.JPG'
 import Grid from '@mui/material/Grid';
 
 export default function Showcase() {
@@ -13,7 +12,7 @@ export default function Showcase() {
     const projects = [
         {
             title: "Rob's React Portfolio",
-            img: require('../../assets/images/react-logo.gif'),
+            img: require('../../assets/images/rob_default_crop.JPG'),
             alt: 'spinning react logo gif',
             description: 'A personal website built with React to showcase my projects.',
             website: '',

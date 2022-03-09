@@ -13,7 +13,7 @@ main {
   --tertiary: #B12704;
   --light: #fafafa;
   --dark: #1d1d1d;
-  --darker: #303030;
+  --darker: #282c34;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);

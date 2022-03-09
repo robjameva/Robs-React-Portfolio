@@ -48,6 +48,7 @@ function ContactForm() {
                         name="name"
                         onMouseOut={handleChange}
                         margin="normal"
+                    // sx={{ color: 'text.primary' }}
                     />
                 </div>
                 <div>
