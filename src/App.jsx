@@ -7,7 +7,7 @@ import Showcase from './components/Showcase';
 import Footer from './components/Footer';
 
 function App() {
-  const [navLinks] = useState(['About Me', 'Showcase', 'Resume', 'Contact'])
+  const [navLinks] = useState(['About Me', 'Showcase', 'Resume'])
 
   const [currentNavLink, setcurrentNavLink] = useState(navLinks[0]);
 
@@ -19,10 +19,6 @@ function App() {
         return <Showcase />
       case 'Resume':
         return <Resume />
-      case 'Contact':
-        return <ContactForm />
-
-
     }
   }
 

@@ -66,33 +66,37 @@ export default function Showcase() {
     }
 
     return (
-        <Grid container spacing={2} >
-            {
-                projects.map(project => (
-                    <Grid item xs={12} sm={6} md={4} key={project.title}>
-                        <Card sx={{ maxWidth: 345 }} className='card-container'>
-                            <CardMedia
-                                component="img"
-                                height="140"
-                                image={project.img}
-                                alt={project.alt}
-                            />
-                            <CardContent>
-                                <Typography gutterBottom variant="h5" component="div" className='showcase-card' >
-                                    {project.title}
-                                </Typography>
-                                <Typography variant="body2" color="text.secondary" className='showcase-card'>
-                                    {project.description}
-                                </Typography>
-                            </CardContent>
-                            <CardActions>
-                                <Button size="small" onClick={() => handleRedirect(project.website)}>Visit Website</Button>
-                                <Button size="small" onClick={() => handleRedirect(project.repo)}>Source Code</Button>
-                            </CardActions>
-                        </Card>
-                    </Grid>
-                ))
-            }
-        </Grid>
+        <>
+            <h1 className='title-text'>Project Showcase</h1>
+            <br />
+            <Grid container spacing={2} >
+                {
+                    projects.map(project => (
+                        <Grid item xs={12} sm={6} md={4} key={project.title}>
+                            <Card sx={{ maxWidth: 345 }} className='card-container'>
+                                <CardMedia
+                                    component="img"
+                                    height="140"
+                                    image={project.img}
+                                    alt={project.alt}
+                                />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="div" className='showcase-card' >
+                                        {project.title}
+                                    </Typography>
+                                    <Typography variant="body2" color="text.secondary" className='showcase-card'>
+                                        {project.description}
+                                    </Typography>
+                                </CardContent>
+                                <CardActions>
+                                    <Button size="small" onClick={() => handleRedirect(project.website)}>Visit Website</Button>
+                                    <Button size="small" onClick={() => handleRedirect(project.repo)}>Source Code</Button>
+                                </CardActions>
+                            </Card>
+                        </Grid>
+                    ))
+                }
+            </Grid>
+        </>
     );
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import png from '../../assets/images/resume.png'
 import jpg from '../../assets/images/resume.jpg'
 import pdf from '../../assets/images/Resume.pdf'
 

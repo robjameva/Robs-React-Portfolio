@@ -162,6 +162,11 @@ nav  li {
   cursor: pointer;
 }
 
+.title-text {
+  text-align: center;
+  font-size: 3em;
+}
+
 .rob {
   border-radius: 50%;
   max-height: 350px;
