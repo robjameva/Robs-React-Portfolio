@@ -11,12 +11,12 @@ export default function Showcase() {
 
     const projects = [
         {
-            title: "Rob's React Portfolio",
-            img: require('../../assets/images/rob_default_crop.JPG'),
-            alt: 'spinning react logo gif',
-            description: 'A personal website built with React to showcase my projects.',
-            website: '',
-            repo: 'https://github.com/robjameva/robs-react-portfolio'
+            title: "Easy Res v2",
+            img: require('../../assets/images/easyResV2.png'),
+            alt: 'Easy Res v2',
+            description: 'Version 2 of Easy Res.',
+            website: 'https://easy-res-v2.herokuapp.com/',
+            repo: 'https://github.com/robjameva/easy-res-v2'
         },
         {
             title: 'My First React App',
